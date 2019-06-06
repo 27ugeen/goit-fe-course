@@ -24,4 +24,42 @@ span:hover {
   width: 500px;
   height: 500px;
 } */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+
+body {
+  font-family: "Playfair Display", Arial, serif;
+  color: #626262;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.nav_menu {
+  list-style: none;
+}
+
+.nav_menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.signature {
+  font-family: "Ubuntu lite" sans-serif;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  line-height: 17px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+button {
+  font-size: 20px;
+  text-align: center;
+}
