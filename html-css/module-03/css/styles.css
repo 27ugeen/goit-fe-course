@@ -1,35 +1,11 @@
-/* body {
-  font-family: "Playfair Display", serif;
-}
-
-span {
-  color: navy;
-}
-span:hover {
-  color: red;
-  background-color: black;
-}
-
-.main_nav {
-    width: 800px;
-    height: 400px;
-  text-align: center;
-  background-color: grey;
-  margin: 0 auto;
-}
-
-.main-nav-list li {
-  display: inline;
-  margin-right: 10px;
-  width: 500px;
-  height: 500px;
-} */
-* {
-  margin: 0;
-  padding: 0;
+html {
   box-sizing: border-box;
 }
-
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: "Playfair Display", Arial, serif;
@@ -37,28 +13,83 @@ body {
   font-size: 14px;
   line-height: 24px;
 }
-
+/* header */
 .nav_menu {
+  width: 901px;
+  margin: 0 auto;
+  padding-top: 77px;
+  padding-bottom: 107px;
+}
+.nav_menu-list {
+  vertical-align: middle;
+  width: 901px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  text-align: center;
+}
+.nav_menu-list li {
+  display: inline-block;
+  margin-right: 100px;
 }
 
-.nav_menu a {
+.nav_menu-list li:last-child {
+  margin-right: 0;
+}
+
+.nav_menu-list a {
   text-transform: uppercase;
   text-decoration: none;
 }
 
+.nav_menu-list a:hover,
+.nav_menu-list a:focus {
+  color: skyblue;
+}
+
+/* main */
+.wrapper {
+  width: 901px;
+  margin: 0 auto;
+}
+
 .signature {
-  font-family: "Ubuntu lite" sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
   color: #b4ad9e;
   line-height: 17px;
+  margin-bottom: 29px;
 }
 
-h2 {
+.wrapper h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper h2 {
   font-size: 30px;
+  font-weight: normal;
   line-height: 36px;
+  margin-bottom: 41px;
 }
 
+.wrapper article {
+  width: 420px;
+  display: inline-block;
+  margin-right: 61px;
+}
+.wrapper article:nth-child(2n) {
+  margin-right: -4px;
+}
+.wrapper img {
+  margin-bottom: 31px;
+}
+.wrapper article:nth-child(1), article:nth-child(2) {
+  margin-bottom: 135px;
+}
+.wrapper article:nth-child(3), article:nth-child(4) {
+  margin-bottom: 141px;
+}
 button {
   font-size: 20px;
   text-align: center;
