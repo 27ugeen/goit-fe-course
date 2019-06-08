@@ -58,14 +58,15 @@ body {
 }
 
 .signature {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   color: #b4ad9e;
   line-height: 17px;
   margin-bottom: 29px;
 }
 
-.wrapper h2, p {
+.wrapper h2,
+p {
   margin: 0;
   padding: 0;
 }
@@ -88,10 +89,12 @@ body {
 .wrapper img {
   margin-bottom: 31px;
 }
-.wrapper article:nth-child(1), article:nth-child(2) {
+.wrapper article:nth-child(1),
+article:nth-child(2) {
   margin-bottom: 135px;
 }
-.wrapper article:nth-child(3), article:nth-child(4) {
+.wrapper article:nth-child(3),
+article:nth-child(4) {
   margin-bottom: 141px;
 }
 
@@ -99,11 +102,10 @@ button {
   padding: 0;
   width: 164px;
   height: 60px;
+  font-family: "Playfair Display", Arial, serif;
   background-color: #fff;
   cursor: pointer;
   display: block;
-  margin: 0 auto;
+  margin: 57px auto 70px;
   font-size: 20px;
-  margin-top: 57px;
-  margin-bottom: 70px;
 }
