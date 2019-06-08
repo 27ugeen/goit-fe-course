@@ -30,11 +30,15 @@ body {
 }
 .nav_menu-list li {
   display: inline-block;
-  margin-right: 100px;
 }
-
-.nav_menu-list li:last-child {
-  margin-right: 0;
+.nav_menu-list li:first-child {
+  margin-right: 121px;
+}
+.nav_menu-list li:nth-child(2) {
+  margin-right: 104px;
+}
+.nav_menu-list li:nth-child(3) {
+  margin-right: 95px;
 }
 
 .nav_menu-list a {
@@ -90,7 +94,16 @@ body {
 .wrapper article:nth-child(3), article:nth-child(4) {
   margin-bottom: 141px;
 }
+
 button {
+  padding: 0;
+  width: 164px;
+  height: 60px;
+  background-color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
   font-size: 20px;
-  text-align: center;
+  margin-top: 57px;
+  margin-bottom: 70px;
 }
