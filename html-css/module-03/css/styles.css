@@ -44,6 +44,7 @@ body {
 .nav_menu-list a {
   text-transform: uppercase;
   text-decoration: none;
+  color: #626262;
 }
 
 .nav_menu-list a:hover,
