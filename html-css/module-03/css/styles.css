@@ -6,6 +6,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Playfair Display", Arial, serif;
@@ -30,15 +34,10 @@ body {
 }
 .nav_menu-list li {
   display: inline-block;
+  margin-right: 106px;
 }
-.nav_menu-list li:first-child {
-  margin-right: 121px;
-}
-.nav_menu-list li:nth-child(2) {
-  margin-right: 104px;
-}
-.nav_menu-list li:nth-child(3) {
-  margin-right: 95px;
+.nav_menu-list li:last-child {
+  margin-right: 0;
 }
 
 .nav_menu-list a {
@@ -64,12 +63,6 @@ body {
   color: #b4ad9e;
   line-height: 17px;
   margin-bottom: 29px;
-}
-
-.wrapper h2,
-p {
-  margin: 0;
-  padding: 0;
 }
 
 .wrapper h2 {
