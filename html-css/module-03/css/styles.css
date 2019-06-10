@@ -24,7 +24,6 @@ body, button{
 }
 /* header */
 .nav_menu {
-  margin: 0 auto;
   padding-top: 76px;
   padding-bottom: 108px;
 }
@@ -56,6 +55,7 @@ body, button{
 .signature {
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
+  font-weight: 300;
   color: #b4ad9e;
   line-height: 17px;
   margin-bottom: 28px;
@@ -72,23 +72,22 @@ body, button{
   width: 420px;
   display: inline-block;
   margin-right: 60px;
+  margin-bottom: 136px;
 }
 .wrapper article:nth-child(2n) {
-  margin-right: -4px;
+  margin-right: 0;
+  margin-left: -4px;
 }
+
+.wrapper article:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .wrapper img {
   display: block;
   width: 100%;
   height: auto;
   margin-bottom: 30px;
-}
-.wrapper article:nth-child(1),
-article:nth-child(2) {
-  margin-bottom: 134px;
-}
-.wrapper article:nth-child(3),
-article:nth-child(4) {
-  margin-bottom: 140px;
 }
 
 button {
