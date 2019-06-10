@@ -1,4 +1,4 @@
-html {
+html{
   box-sizing: border-box;
 }
 *,
@@ -11,7 +11,7 @@ html {
   padding: 0;
 }
 
-body {
+body, button{
   font-family: "Playfair Display", Arial, serif;
   color: #626262;
   font-size: 14px;
@@ -29,7 +29,6 @@ body {
   padding-bottom: 108px;
 }
 .nav_menu-list {
-  vertical-align: middle;
   list-style: none;
   text-align: center;
 }
@@ -49,7 +48,7 @@ body {
 
 .nav_menu-list a:hover,
 .nav_menu-list a:focus {
-  color: skyblue;
+  color: #03a9f4;
 }
 
 /* main */
@@ -78,6 +77,9 @@ body {
   margin-right: -4px;
 }
 .wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 .wrapper article:nth-child(1),
@@ -90,13 +92,12 @@ article:nth-child(4) {
 }
 
 button {
+  display: block;
   width: 164px;
   height: 60px;
-  font-family: "Playfair Display", Arial, serif;
-  font-size: 20px;
-  color: #626262;
-  background-color: #fff;
-  cursor: pointer;
-  display: block;
   margin: 56px auto 70px;
+  border: 1px solid;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer; 
 }
