@@ -17,18 +17,19 @@ body {
   font-size: 14px;
   line-height: 24px;
 }
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
 /* header */
 .nav_menu {
-  width: 901px;
   margin: 0 auto;
-  padding-top: 77px;
-  padding-bottom: 107px;
+  padding-top: 76px;
+  padding-bottom: 108px;
 }
 .nav_menu-list {
   vertical-align: middle;
-  width: 901px;
-  margin: 0;
-  padding: 0;
   list-style: none;
   text-align: center;
 }
@@ -52,54 +53,50 @@ body {
 }
 
 /* main */
-.wrapper {
-  width: 901px;
-  margin: 0 auto;
-}
 
 .signature {
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   color: #b4ad9e;
   line-height: 17px;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 
 .wrapper h2 {
   font-size: 30px;
   font-weight: normal;
   line-height: 36px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .wrapper article {
   width: 420px;
   display: inline-block;
-  margin-right: 61px;
+  margin-right: 60px;
 }
 .wrapper article:nth-child(2n) {
   margin-right: -4px;
 }
 .wrapper img {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 .wrapper article:nth-child(1),
 article:nth-child(2) {
-  margin-bottom: 135px;
+  margin-bottom: 134px;
 }
 .wrapper article:nth-child(3),
 article:nth-child(4) {
-  margin-bottom: 141px;
+  margin-bottom: 140px;
 }
 
 button {
-  padding: 0;
   width: 164px;
   height: 60px;
   font-family: "Playfair Display", Arial, serif;
+  font-size: 20px;
+  color: #626262;
   background-color: #fff;
   cursor: pointer;
   display: block;
-  margin: 57px auto 70px;
-  font-size: 20px;
+  margin: 56px auto 70px;
 }
