@@ -38,7 +38,7 @@
   margin: 32px auto 0px;
 }
 /* nav menu */
-.nav-menu {
+header {
   padding-top: 36px;
   padding-bottom: 31px;
 }
@@ -50,9 +50,11 @@
 .nav-menu-list a:focus {
   color: #1abc9c;
 }
-.nav-menu h1 {
+/* logo */
+.logo {
+  /* float: left; */
   display: inline-block;
-  width: 80px;
+  /* width: 80px; */
   text-decoration: none;
   color: #555252;
   font-family: "Roboto", sans-serif;
@@ -61,15 +63,19 @@
   line-height: 32px;
   cursor: pointer;
 }
-.nav-menu h1::first-letter {
+.logo::first-letter {
   color: #1abc9c;
   font-weight: 900;
 }
-.nav-menu-list {
+.nav-menu {
+  float: right;
+  margin-top: 10px;
+}
+/* .nav-menu-list {
   float: right;
   width: 476px;
   margin-top: 30px;
-}
+} */
 .nav-menu-list li {
   float: left;
   list-style: none;
@@ -115,7 +121,11 @@
 .product:nth-last-child(-n + 4) {
   margin-bottom: 0;
 }
-.product:hover .post {
+.product a {
+  display: block;
+}
+.product a:hover 
+.post {
   background: #1abc9c;
   cursor: pointer;
 }
