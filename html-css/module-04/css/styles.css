@@ -37,6 +37,21 @@
   width: 164px;
   margin: 32px auto 0px;
 }
+/* logo */
+.logo {
+  float: left;
+  text-decoration: none;
+  color: #555252;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 32px;
+  cursor: pointer;
+}
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
 /* nav menu */
 header {
   padding-top: 36px;
@@ -50,32 +65,10 @@ header {
 .nav-menu-list a:focus {
   color: #1abc9c;
 }
-/* logo */
-.logo {
-  /* float: left; */
-  display: inline-block;
-  /* width: 80px; */
-  text-decoration: none;
-  color: #555252;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 32px;
-  cursor: pointer;
-}
-.logo::first-letter {
-  color: #1abc9c;
-  font-weight: 900;
-}
 .nav-menu {
   float: right;
   margin-top: 10px;
 }
-/* .nav-menu-list {
-  float: right;
-  width: 476px;
-  margin-top: 30px;
-} */
 .nav-menu-list li {
   float: left;
   list-style: none;
@@ -89,8 +82,6 @@ header {
 }
 /* featured products */
 .product {
-  width: 255px;
-  height: 322px;
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -106,11 +97,10 @@ header {
 }
 .featured-products h3 {
   float: left;
-  width: 201px;
   padding-left: 13px;
 }
 .price {
-  display: inline-block;
+  float: right;
   width: 54px;
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
