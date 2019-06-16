@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .clearfix::after {
   display: table;
   content: "";
@@ -17,12 +16,10 @@
   font-weight: normal;
   text-transform: uppercase;
 }
-
 .wrapper img {
   display: block;
   line-height: 0;
 }
-
 .wrapper h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -32,7 +29,6 @@
   margin-bottom: 90px;
   padding-top: 72px;
 }
-
 .wrapper h2:after {
   display: block;
   content: "";
@@ -41,13 +37,19 @@
   width: 164px;
   margin: 32px auto 0px;
 }
-
 /* nav menu */
 .nav-menu {
   padding-top: 36px;
   padding-bottom: 31px;
 }
-
+.nav-menu-list a {
+  text-decoration: none;
+  color: #555252;
+}
+.nav-menu-list a:hover,
+.nav-menu-list a:focus {
+  color: #1abc9c;
+}
 .nav-menu h1 {
   display: inline-block;
   width: 80px;
@@ -59,12 +61,10 @@
   line-height: 32px;
   cursor: pointer;
 }
-
 .nav-menu h1::first-letter {
   color: #1abc9c;
   font-weight: 900;
 }
-
 .nav-menu-list {
   float: right;
   width: 476px;
@@ -78,17 +78,10 @@
   line-height: 11px;
   cursor: pointer;
 }
-
-.nav-menu-list li:hover,
-.nav-menu-list li:focus {
-  color: #1abc9c;
-}
 .nav-menu-list li:not(:last-child) {
   margin-right: 32px;
 }
-
 /* featured products */
-
 .product {
   width: 255px;
   height: 322px;
@@ -97,7 +90,6 @@
   margin-bottom: 30px;
   background: #e9f0fd;
 }
-
 .post {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -106,7 +98,6 @@
   background: #323232;
   line-height: 40px;
 }
-
 .featured-products h3 {
   float: left;
   width: 201px;
@@ -116,18 +107,14 @@
   display: inline-block;
   width: 54px;
   text-align: center;
-}
-.price {
   background: rgba(255, 255, 255, 0.5);
 }
 .product:nth-child(4n + 1) {
   margin-right: 0;
 }
-
 .product:nth-last-child(-n + 4) {
   margin-bottom: 0;
 }
-
 .product:hover .post {
   background: #1abc9c;
   cursor: pointer;
@@ -140,11 +127,9 @@
   float: left;
   text-transform: none;
 }
-
 .news:last-child {
   margin-right: 0;
 }
-
 .news h3 {
   font-weight: 600;
   font-size: 18px;
@@ -153,7 +138,6 @@
   margin-bottom: 30px;
   text-align: left;
 }
-
 .news h3::after {
   display: block;
   content: "";
@@ -162,13 +146,11 @@
   width: 136px;
   margin-top: 10px;
 }
-
 .news p {
   font-size: 13px;
   line-height: 26px;
   margin-bottom: 15px;
 }
-
 .news button {
   display: block;
   width: 160px;
@@ -177,5 +159,5 @@
   border-radius: 5px;
   color: #fff;
   background: #1abc9c;
-  cursor: pointer; 
+  cursor: pointer;
 }
