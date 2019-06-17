@@ -38,11 +38,13 @@
   margin: 32px auto 0px;
 }
 /* logo */
-/* .wrapper h1 {
+.wrapper h1 {
   float: left;
-} */
+  margin: 0;
+}
 .wrapper h1 a {
-  float: left;
+  /* float: left; */
+  display: block;
   text-decoration: none;
   color: #555252;
   font-family: "Roboto", sans-serif;
@@ -161,7 +163,6 @@ header {
   text-align: center;
   line-height: 52px;
   width: 160px;
-  /* border: none; */
   border-radius: 5px;
   color: #fff;
   background: #1abc9c;
