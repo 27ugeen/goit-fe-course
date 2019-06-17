@@ -161,7 +161,7 @@ header {
   text-align: center;
   line-height: 52px;
   width: 160px;
-  border: none;
+  /* border: none; */
   border-radius: 5px;
   color: #fff;
   background: #1abc9c;
