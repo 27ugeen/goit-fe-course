@@ -38,7 +38,7 @@
   margin: 32px auto 0px;
 }
 /* logo */
-.logo {
+.wrapper h1 a {
   float: left;
   text-decoration: none;
   color: #555252;
@@ -48,7 +48,7 @@
   line-height: 32px;
   cursor: pointer;
 }
-.logo::first-letter {
+.wrapper h1 a::first-letter {
   color: #1abc9c;
   font-weight: 900;
 }
@@ -151,8 +151,12 @@ header {
   line-height: 26px;
   margin-bottom: 15px;
 }
-.news button {
-  display: block;
+.news a {
+  float: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 52px;
   width: 160px;
   height: 52px;
   border: none;
