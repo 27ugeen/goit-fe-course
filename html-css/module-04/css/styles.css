@@ -15,6 +15,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 .wrapper img {
   display: block;
@@ -138,7 +139,7 @@ header {
 .news h3 {
   font-weight: 600;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 26px;
   margin-top: 15px;
   margin-bottom: 30px;
   text-align: left;
