@@ -125,6 +125,7 @@ header {
   display: block;
   width: 104px;
   height: 104px;
+  border: none;
 }
 .slide-prew {
   top: 50%;
