@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 /* TASK 1.1 */
-/* .background {
+.background {
   width: 100vw;
   height: 100vh;
   background-image: url(../img/galaxy.jpg);
@@ -23,7 +23,7 @@
   height: 100%;
   position: absolute;
   background: rgba(0, 0, 0, 0.3);
-} */
+}
 
 /* TASK 1.2 */
 /* .container {
