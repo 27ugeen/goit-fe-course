@@ -94,7 +94,7 @@ header {
   width: 100vw;
   background: rgba(0, 0, 2, 0.52);
 }
-.button:hover {
+.but:hover {
   opacity: 0.5;
   cursor: pointer;
 }
@@ -120,7 +120,7 @@ header {
   line-height: 54px;
   font-weight: 300;
 }
-.button {
+.but {
   position: absolute;
   display: block;
   width: 104px;
