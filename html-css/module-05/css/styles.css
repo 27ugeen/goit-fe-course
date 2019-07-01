@@ -272,6 +272,12 @@ footer {
   text-align: center;
 }
 .footer a {
+  display: inline-block;
   text-decoration: none;
   color: #1abc9c;
 }
+/* .footer a::first-letter {
+  color: rgb(162, 0, 255);
+  font-weight: 900;
+  font-size: 24px;
+} */

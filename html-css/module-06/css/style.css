@@ -1,0 +1,144 @@
+@import url(./reset.css);
+
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400,700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+}
+/* HEADER */
+.header {
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 132px;
+}
+.header a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #95e1d3;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+}
+.logo a {
+  text-transform: none;
+  font-weight: 700;
+  font-size: 30px;
+}
+.nav_menu_list {
+  width: 490px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_menu_list_item::after {
+  position: relative;
+  transform: translateY(12px);
+  content: "";
+  display: block;
+  height: 3px;
+}
+.nav_menu_list_item:hover::after {
+  background-color: #f38181;
+}
+.nav_menu_list_item:hover a {
+  color: #f38181;
+}
+/* SECTION SERVICE */
+.service h2,
+.team h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0 auto;
+  text-align: center;
+}
+.service span,
+.team span {
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+  margin-bottom: 26px;
+}
+.service h2::after,
+.team h2::after {
+  display: block;
+  width: 60px;
+  height: 3px;
+  content: "";
+  background-color: #f38181;
+  margin: 42px auto 66px;
+}
+.service_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 94px;
+}
+.service_list_item {
+  position: relative;
+  width: 382px;
+  padding-left: 80px;
+}
+.service_list_item::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  content: "";
+  width: 32px;
+  height: 32px;
+}
+.service_list_item:first-child::before {
+  background-image: url(../img/services/photography.png);
+}
+.service_list_item:nth-child(2)::before {
+  background-image: url(../img/services/web-design.png);
+}
+.service_list_item:nth-child(3)::before {
+  background-image: url(../img/services/creativity.png);
+}
+.service_list_item:nth-child(4)::before {
+  background-image: url(../img/services/seo.png);
+}
+.service_list_item:nth-child(5)::before {
+  background-image: url(../img/services/css-html.png);
+}
+.service_list_item:last-child::before {
+  background-image: url(../img/services/digital.png);
+}
+.service_list_item:nth-child(-n + 3) {
+  margin-bottom: 102px;
+}
+.service_list h3 {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 22px;
+}
+/* SECTION TEAM */
