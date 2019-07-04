@@ -162,17 +162,17 @@ html {
   margin: 0 auto 90px;
   text-align: center;
 }
-.team_list_item {
-  width: 380px;
-}
 .team_list {
   display: flex;
   justify-content: space-between;
 }
+.team_list_item {
+  width: 380px;
+}
 .team_list_img_caption {
   padding-top: 30px;
 }
-.team_list h3 {
+.team_list_img_caption h3 {
   text-transform: uppercase;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
@@ -181,12 +181,12 @@ html {
   text-align: center;
   margin-bottom: 16px;
 }
-.team_list_item p {
+.team_list_img_caption p {
   font-weight: 300;
   font-style: italic;
   text-align: center;
 }
-.team_list img {
+.team_list_item img {
   display: block;
   line-height: 0;
   width: 100%;
