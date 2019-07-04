@@ -10,11 +10,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-.clearfix::after {
-  display: table;
-  content: "";
-  clear: both;
-}
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -26,25 +21,31 @@ html {
 }
 /* HEADER */
 .header {
-  min-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding-top: 28px;
   margin-bottom: 132px;
+}
+.nav_menu {
+  margin-top: 12px;
 }
 .header a {
   display: block;
-  text-transform: uppercase;
   text-decoration: none;
   color: #95e1d3;
   font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 14px;
   transition: color 0.2s linear;
 }
 .logo a {
-  text-transform: none;
   font-weight: 700;
   font-size: 30px;
+  line-height: 36px;
+}
+.nav_menu_list a {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
 }
 .nav_menu_list {
   display: flex;
@@ -154,16 +155,22 @@ html {
 }
 /* SECTION TEAM */
 .team {
-  margin-bottom: 82px;
+  padding-bottom: 82px;
 }
 .post {
   max-width: 80%;
   margin: 0 auto 90px;
   text-align: center;
 }
+.team_list_item {
+  width: 380px;
+}
 .team_list {
   display: flex;
   justify-content: space-between;
+}
+.team_list_img_caption {
+  padding-top: 30px;
 }
 .team_list h3 {
   text-transform: uppercase;
@@ -172,7 +179,6 @@ html {
   font-size: 14px;
   color: #333333;
   text-align: center;
-  padding-top: 30px;
   margin-bottom: 16px;
 }
 .team_list_item p {
@@ -263,8 +269,9 @@ html {
   color: #f38181;
   text-decoration: none;
 }
-.floated {
-  float: left;
+.subscribe {
+  display: flex;
+  justify-content: center;
 }
 input[type="text"]::placeholder {
   color: #cccccc;
@@ -282,6 +289,7 @@ input[type="text"] {
   min-height: 36px;
   border: 1px solid #cccccc;
   border-right-style: none;
+  padding: 0 12px 0 12px;
 }
 input[type="submit"] {
   background-color: #95e1d3;
