@@ -1,0 +1,220 @@
+@import url(./reset.css);
+
+@import url(./fonts.css);
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 44px;
+  margin-bottom: 120px;
+}
+.nav_menu {
+  margin-top: 12px;
+}
+.header a {
+  display: block;
+  text-decoration: none;
+  color: #222222;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+.logo a {
+  font-family: "Oleoscript";
+  font-size: 2.6rem;
+  /* line-height: 4.1rem; */
+  color: #fed136;
+}
+.logo a::first-letter {
+  text-transform: uppercase;
+}
+.nav_menu_list a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  /* line-height: 4.1rem; */
+  font-weight: 700;
+}
+.nav_menu_list a:hover {
+  color: #fed136;
+  transition: color 0.2s linear;
+}
+.nav_menu_list {
+  display: flex;
+}
+.nav_menu_list_item {
+  margin-right: 40px;
+}
+.nav_menu_list_item:last-child {
+  margin-right: 0;
+}
+
+/* SERVICES */
+.services {
+  margin-bottom: 120px;
+}
+.services h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4.1rem;
+  line-height: 7.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.services p {
+  font-family: "PT_Serif";
+  font-size: 1.6rem;
+  color: #777777;
+  margin: 0 auto;
+  text-align: center;
+}
+.services_list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 78px;
+}
+.services_list h3 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #222222;
+  font-size: 1.8rem;
+  line-height: 7.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+.services_list p {
+  font-family: "RoobotoSlab", "Arial", sans-serif;
+  color: #777777;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+.services_list_item {
+  flex: 0 0 290px;
+}
+.services_list_item::before {
+  display: block;
+  width: 72px;
+  height: 72px;
+  content: "";
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services_list_item:first-child::before {
+  background-image: url(../img/icon_basket.png);
+}
+.services_list_item:nth-child(2)::before {
+  background-image: url(../img/icon_laptop.png);
+}
+.services_list_item:last-child::before {
+  background-image: url(../img/icon_locked.png);
+}
+/* SECTION FORM */
+.form_contact_us {
+  background-image: url(../img/form_bg.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.contact_us h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4.1rem;
+  line-height: 7.5rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding-top: 110px;
+}
+.contact_us p {
+  font-family: "PT_Serif";
+  font-size: 1.6rem;
+  color: #777777;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 74px;
+}
+.contact_us_list input::placeholder,
+.contact_us_list textarea::placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+.contact_us_list input,
+.contact_us_list textarea {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #000;
+}
+.contact_us_list_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 15px);
+}
+.contact_us_list_item :not(:last-child){
+    margin-bottom: 26px;
+}
+.contact_us_list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.contact_us_list input,
+.contact_us_list textarea {
+  line-height: 52px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 3px;
+}
+.contact_us_list textarea[name="user_massage"] {
+  width: calc(50% - 15px);
+  resize: none;
+}
+.contact_us_list input[name="user_name"]:valid,
+.contact_us_list input[name="user_email"]:valid,
+.contact_us_list textarea[name="user_massage"]:valid {
+  outline: 1px solid #008000;
+}
+
+.contact_us_list input[name="user_name"]:invalid,
+.contact_us_list input[name="user_email"]:invalid,
+.contact_us_list textarea[name="user_massage"]:invalid {
+  outline: 1px solid #ff0000;
+}
+.contact_us button {
+  display: block;
+  margin: 0 auto 115px;
+  width: 240px;
+  height: 65px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fed136;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}

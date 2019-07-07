@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Oleoscript";
+  src: url(../fonts/oleoscript-regular-webfont.woff) format("woff"),
+    url(../fonts/oleoscript-regular-webfont.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RoobotoSlab";
+  src: url(../fonts/roboto-slab-v8-latin-regular.woff) format("woff"),
+    url(../fonts/roboto-slab-v8-latin-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-v13-latin-regular.woff) format("woff"),
+    url(../fonts/montserrat-v13-latin-regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat-v13-latin-700.woff) format("woff"),
+    url(../fonts/montserrat-v13-latin-700.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT_Serif";
+  src: url(../fonts/pt_serif-web-italic-webfont.woff) format("woff"),
+    url(../fonts/pt_serif-web-italic-webfont.woff2) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
