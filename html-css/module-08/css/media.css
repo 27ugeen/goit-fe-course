@@ -58,13 +58,10 @@
   .page_header {
     left: 0;
     right: 0;
+    top: 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .page_header h1,
-  .user_form_button {
-    padding-top: 48px;
   }
   .banner {
     height: 700px;
