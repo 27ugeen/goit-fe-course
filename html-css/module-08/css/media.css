@@ -1,0 +1,133 @@
+@media screen and (max-width: 747px) {
+  .container {
+    width: 320px;
+  }
+  .page_header {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .page_header h1 {
+    padding-top: 175px;
+  }
+  .user_form_button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35px;
+  }
+  /* SECTION PARTNERS_FIND */
+  .partners_find h2 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    padding-top: 224px;
+    margin-bottom: 13px;
+  }
+  .partners_find p {
+    font-size: 1.8rem;
+    line-height: 2.16rem;
+    margin: 0 50px 19px;
+  }
+  .banner {
+    height: 540px;
+    margin-bottom: 23px;
+  }
+  /* PARTNER_CARDS */
+  .partner_cards_list_item {
+    margin: 0 auto;
+  }
+  .partner_cards_list_item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .partner_cards h2 {
+    margin-bottom: 15px;
+  }
+  .partner_cards a {
+    margin: 28px auto 56px;
+  }
+  .partner_cards_list_item:nth-child(2),
+  .partner_cards_list_item:nth-child(4) {
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 748px) {
+  .container {
+    width: 748px;
+  }
+  .page_header {
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page_header h1,
+  .user_form_button {
+    padding-top: 48px;
+  }
+  .banner {
+    height: 700px;
+    margin-bottom: 32px;
+  }
+  .partners_find h2 {
+    font-size: 5.2rem;
+    line-height: 6.24rem;
+    padding-top: 224px;
+    margin: 0 122px 35px;
+  }
+  .partners_find p {
+    font-size: 2.4rem;
+    line-height: 2.88rem;
+    margin-bottom: 32px;
+  }
+  /* PARTNER_CARDS */
+  .partner_cards h2 {
+    margin-bottom: 32px;
+  }
+  .partner_cards a {
+    margin: 40px auto;
+  }
+}
+
+@media screen and (min-width: 748px) and (max-width: 939px) {
+  .page_header h1 {
+    margin-left: 40px;
+  }
+  .user_form_button {
+    margin-right: 53px;
+  }
+  .partner_cards_list_item:nth-child(odd) {
+    margin-left: 132px;
+    margin-right: 48px;
+  }
+  .partner_cards_list_item:nth-child(even) {
+    margin-right: 132px;
+  }
+  .partner_cards_list_item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 55px;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .container {
+    width: 940px;
+  }
+  .banner {
+    margin-bottom: 70px;
+  }
+  .partners_find h2 {
+    margin-right: 218px;
+    margin-left: 218px;
+  }
+  /* PARTNER_CARDS */
+  .partner_cards_list_item:not(:nth-child(4n)) {
+    margin-right: 22px;
+  }
+  .partner_cards_list_item img {
+    border-radius: 0;
+  }
+  .partner_cards a {
+    margin-bottom: 72px;
+  }
+}
