@@ -1,49 +1,10 @@
 @media screen and (max-width: 747px) {
-  .container {
-    width: 320px;
-  }
-  .page_header {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .page_header h1 {
-    padding-top: 175px;
-  }
-  .user_form_button {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 35px;
-  }
-  /* SECTION PARTNERS_FIND */
-  .partners_find h2 {
-    font-size: 3rem;
-    line-height: 3.6rem;
-    padding-top: 224px;
-    margin-bottom: 13px;
-  }
   .partners_find p {
-    font-size: 1.8rem;
-    line-height: 2.16rem;
-    margin: 0 50px 19px;
-  }
-  .banner {
-    height: 540px;
-    margin-bottom: 23px;
-  }
-  /* PARTNER_CARDS */
-  .partner_cards_list_item {
-    margin: 0 auto;
+    width: 68%;
+    margin: 0 auto 19px;
   }
   .partner_cards_list_item:not(:last-child) {
     margin-bottom: 24px;
-  }
-  .partner_cards h2 {
-    margin-bottom: 15px;
-  }
-  .partner_cards a {
-    margin: 28px auto 56px;
   }
   .partner_cards_list_item:nth-child(2),
   .partner_cards_list_item:nth-child(4) {
@@ -55,13 +16,19 @@
   .container {
     width: 748px;
   }
-  .page_header {
-    left: 0;
-    right: 0;
-    top: 48px;
+  .logo {
+    display: inline-block;
+  }
+  .banner_logo {
+    display: none;
+  }
+  .user_form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .page_header {
+    padding-top: 38px;
   }
   .banner {
     height: 700px;
@@ -71,7 +38,8 @@
     font-size: 5.2rem;
     line-height: 6.24rem;
     padding-top: 224px;
-    margin: 0 122px 35px;
+    width: 65%;
+    margin: 0 auto 35px;
   }
   .partners_find p {
     font-size: 2.4rem;
@@ -79,6 +47,9 @@
     margin-bottom: 32px;
   }
   /* PARTNER_CARDS */
+  .partner_cards_list {
+    justify-content: space-between;
+  }
   .partner_cards h2 {
     margin-bottom: 32px;
   }
@@ -94,12 +65,9 @@
   .user_form_button {
     margin-right: 53px;
   }
-  .partner_cards_list_item:nth-child(odd) {
-    margin-left: 132px;
-    margin-right: 48px;
-  }
-  .partner_cards_list_item:nth-child(even) {
-    margin-right: 132px;
+  .partner_cards_list {
+    max-width: 492px;
+    margin: 0 auto;
   }
   .partner_cards_list_item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 55px;
@@ -113,17 +81,7 @@
   .banner {
     margin-bottom: 70px;
   }
-  .partners_find h2 {
-    margin-right: 218px;
-    margin-left: 218px;
-  }
   /* PARTNER_CARDS */
-  .partner_cards_list_item:not(:nth-child(4n)) {
-    margin-right: 22px;
-  }
-  .partner_cards_list_item img {
-    border-radius: 0;
-  }
   .partner_cards a {
     margin-bottom: 72px;
   }
