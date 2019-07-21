@@ -1,6 +1,188 @@
-@import "../css/reset.css";
+@import './reset.css';
 
-* {
+@import './bootstrap-grid.css';
+
+@import './fonts.css';
+
+html {
   box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+}
+/* HEADER */
+.page_header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding-top: 20px;
+}
+.logo {
+  display: none;
+}
+.logo a,
+.banner_logo a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #fff;
+}
+.user_form_button button {
+  display: inline-block;
+  width: 86px;
+  height: 32px;
+  padding: 0;
+  outline: 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #fff;
+  border: none;
+  background: transparent;
 }
 
+.user_form_button button:hover,
+.user_form_button button:focus {
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 19px;
+}
+/* SECTION PARTNERS_FIND */
+.banner_logo {
+  padding-top: 170px;
+  margin-bottom: 35px;
+}
+.partners_find h2 {
+  font-size: 3rem;
+  line-height: 3.6rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.partners_find p {
+  font-size: 1.8rem;
+  line-height: 2.16rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-transform: none;
+  color: #fff;
+}
+.partners_find_button {
+  display: inline-block;
+  width: 280px;
+  line-height: 4rem;
+  text-align: center;
+  background-color: #ff4e50;
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 22px;
+}
+.banner {
+  background: rgba(26, 25, 21, 0.9) url(../img/Vector.png);
+  height: 540px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 23px;
+}
+/* PARTNER_CARDS */
+
+.partner_cards_list_item_img {
+  display: inline-block;
+  max-width: 218px;
+}
+.partner_cards_list {
+  margin-bottom: 28px;
+}
+.partner_cards h2,
+.partner_cards h3 {
+  color: #333333;
+}
+.partner_cards p {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #666666;
+}
+.partner_cards h2 {
+  font-size: 2.2rem;
+  line-height: 2.64rem;
+}
+.partner_cards_title {
+  margin-bottom: 15px;
+}
+.partner_cards h3 {
+  margin-bottom: 15px;
+}
+.partner_cards h3,
+.partner_cards p {
+  font-size: 1.4rem;
+  line-height: 1.68rem;
+}
+.partner_card_img {
+  width: 122px;
+  margin: 0 auto 18px;
+  position: relative;
+}
+.partner_cards_list_item_img img {
+  display: block;
+  line-height: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.partner_card_img::after {
+  width: 32px;
+  height: 32px;
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.icon_tv::after {
+  background-image: url(../img/icons/tv.png);
+  background-color: #ff4e50;
+}
+.icon_coffe::after {
+  background-image: url(../img/icons/coffe.png);
+  background-color: #ffa507;
+}
+.icon_bulb::after {
+  background-image: url(../img/icons/bulb.png);
+  background-color: #1cd7ad;
+}
+.icon_plain::after {
+  background-image: url(../img/icons/plain.png);
+  background-color: #4e73db;
+}
+
+.partner_cards a {
+  display: inline-block;
+  width: 280px;
+  line-height: 4rem;
+  background-color: #fff;
+  font-size: 1.4rem;
+  color: #ff4e50;
+  text-decoration: none;
+  border: 2px solid #ff4e50;
+  border-radius: 22px;
+}
+.but_see_other {
+  margin-bottom: 56px;
+}
