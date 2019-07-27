@@ -1,0 +1,156 @@
+@import "./normalize.css";
+
+@import "https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400,700&display=swap";
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.img {
+  display: block;
+  line-height: 0;
+  width: 100%;
+  height: auto;
+}
+.btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.section__title {
+  margin: 0;
+  padding: 0;
+}
+/* HEADER */
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28px;
+}
+.header__container,
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo__link {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.nav__link {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.nav__link::after {
+  position: relative;
+  transform: translateY(12px);
+  content: "";
+  display: block;
+  height: 3px;
+  background: #fce38a;
+  visibility: hidden;
+  /* transition: visibility 0.2s linear; */
+}
+.nav__link:hover::after {
+  visibility: visible;
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: #fce38a;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 55px;
+}
+.btn__svg {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  fill: #fff;
+}
+.btn__svg:hover,
+.btn__svg:focus {
+  fill: #fce38a;
+}
+
+/* BANNER */
+.banner {
+  height: 1000px;
+  background: linear-gradient(
+      0deg,
+      rgba(252, 227, 138, 0.8),
+      rgba(243, 129, 129, 0.8)
+    ),
+    url("../img/picture.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner__title {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 155px;
+  color: #fff;
+  font-size: 150px;
+  line-height: 140px;
+  text-transform: uppercase;
+  margin-bottom: 126px;
+}
+.banner__title span {
+  font-family: "Kaushan Script", cursive;
+  text-transform: none;
+  font-size: 72px;
+}
+.banner__button {
+  width: 154px;
+  height: 34px;
+  line-height: 30px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* SERVICE */
