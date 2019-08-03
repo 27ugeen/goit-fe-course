@@ -1,0 +1,15 @@
+.team {
+  padding: 94px 0 82px;
+}
+
+.team__post {
+  max-width: 80%;
+  margin: 0 auto 90px;
+  text-align: center;
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

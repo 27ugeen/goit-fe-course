@@ -1,0 +1,34 @@
+.team-social {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team-social__link {
+  width: 56px;
+  height: 56px;
+  margin-right: 1px;
+  background: #fce38a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s linear;
+}
+
+.team-social__svg {
+  width: 26px;
+  height: 26px;
+  fill: #f38181;
+  transition: fill 0.3s linear;
+}
+
+.team-social__link:hover .team-social__svg {
+  fill: #fff;
+}
+
+.team-social__link:hover {
+  background: #f38181;
+}

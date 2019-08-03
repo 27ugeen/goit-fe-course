@@ -1,0 +1,27 @@
+.section__title {
+  text-transform: uppercase;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section__title span {
+  font-family: 'Kaushan Script', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+  margin-bottom: 26px;
+}
+
+.section__title::after {
+  display: block;
+  width: 60px;
+  height: 3px;
+  content: '';
+  background-color: #f38181;
+  margin: 42px auto 66px;
+}

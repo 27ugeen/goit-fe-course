@@ -1,0 +1,53 @@
+.banner {
+  height: 1000px;
+  background: linear-gradient(
+      0deg,
+      rgba(252, 227, 138, 0.8),
+      rgba(243, 129, 129, 0.8)
+    ),
+    url('../images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+}
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background: linear-gradient(
+        0deg,
+        rgba(252, 227, 138, 0.8),
+        rgba(243, 129, 129, 0.8)
+      ),
+      url('../images/banner@2x.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.banner__title {
+  width: 70%;
+  margin: 0 auto 126px;
+  text-align: center;
+  padding-top: 155px;
+  color: #fff;
+  font-size: 150px;
+  line-height: 140px;
+  text-transform: uppercase;
+}
+
+.banner__title span {
+  font-family: 'Kaushan Script', cursive;
+  text-transform: none;
+  font-size: 72px;
+}
+
+.banner__button {
+  width: 154px;
+  height: 34px;
+  line-height: 30px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
