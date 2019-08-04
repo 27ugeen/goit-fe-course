@@ -1,12 +1,16 @@
+.btn {
+  @extend %btn;
+}
+
 .btn__svg {
   width: 18px;
   height: 18px;
   vertical-align: middle;
-  fill: #fff;
+  fill: $main-white-color;
   transition: fill 0.2s linear;
-}
 
-.btn__svg:hover,
-.btn__svg:focus {
-  fill: #fce38a;
+  &:hover,
+  &:focus {
+    fill: $main-hover-color;
+  }
 }

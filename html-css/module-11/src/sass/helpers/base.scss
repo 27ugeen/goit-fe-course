@@ -1,14 +1,12 @@
 html {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -17,13 +15,4 @@ html {
   line-height: 0;
   width: 100%;
   height: auto;
-}
-
-.btn {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
 }

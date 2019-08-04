@@ -1,79 +1,53 @@
-.footer,
-.footer__subscribe,
+.footer {
+  @include center-flex('ver_between');
+  min-height: 62px;
+  border-top: 1px solid $footer-border-color;
+}
+
 .footer__license {
   display: flex;
-}
-
-.footer {
-  justify-content: space-between;
-  align-items: center;
-  min-height: 62px;
-  border-top: 1px solid #e5e5e5;
-}
-
-.footer__license {
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 14px;
-  color: #333333;
+  color: $footer-text-color;
+}
+
+.footer__subscribe {
+  display: flex;
 }
 
 .footer__link-author {
   color: #f38181;
 }
 
-.footer__input::-webkit-input-placeholder {
-  color: #cccccc;
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  font-style: italic;
-}
-
-.footer__input:-ms-input-placeholder {
-  color: #cccccc;
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  font-style: italic;
-}
-
-.footer__input::-ms-input-placeholder {
-  color: #cccccc;
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  font-style: italic;
-}
-
-.footer__input::placeholder {
-  color: #cccccc;
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  font-style: italic;
-}
-
 .footer__input {
-  color: #999999;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  color: $main-font-color;
+  font-family: $main-font;
   font-weight: 400;
-  font-size: 15px;
+  font-size: $main-font-size;
   min-width: 228px;
   min-height: 38px;
-  border: 1px solid #cccccc;
+  border: 1px solid $footer-input-color;
   border-right-style: none;
   padding: 0 12px;
+  
+  &::placeholder {
+    color: $footer-input-color;
+    font-family: $main-font;
+    font-weight: 300;
+    font-size: $main-font-size;
+    font-style: italic;
+  }
 }
 
 .footer__button {
-  background-color: #95e1d3;
-  color: #fff;
+  @extend %btn;
+  background-color: $secondary-designer-color;
+  color: $main-white-color;
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 14px;
-  cursor: pointer;
   border: none;
   min-width: 150px;
   min-height: 38px;

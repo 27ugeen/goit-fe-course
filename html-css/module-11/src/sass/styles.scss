@@ -1,24 +1,25 @@
 /*
    Import partials below
 */
-@import './helpers/variables.scss';
 @import './normalize';
-@import 'https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400,700&display=swap';
-@import './helpers/base.scss';
+
+@import './helpers/variables';
+@import './helpers/placeholders';
+@import './helpers/base';
+@import './helpers/mixins';
 
 // components
-@import './components/container.scss';
-@import './components/list.scss';
-@import './components/link.scss';
-@import './components/header.scss';
-@import './components/logo.scss';
-@import './components/nav.scss';
-@import './components/btn.scss';
-@import './components/banner.scss';
-@import './components/section.scss';
-@import './components/service.scss';
-@import './components/team.scss';
-@import './components/team-item.scss';
-@import './components/team-caption.scss';
-@import './components/team-social.scss';
-@import './components/footer.scss';
+
+@import './components/container';
+@import './components/btn';
+@import './components/header';
+@import './components/logo';
+@import './components/nav';
+@import './components/banner';
+@import './components/section';
+@import './components/service';
+@import './components/team';
+@import './components/team-item';
+@import './components/team-caption';
+@import './components/team-social';
+@import './components/footer';

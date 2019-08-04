@@ -7,11 +7,15 @@
   position: relative;
   margin-bottom: 30px;
   transition: box-shadow 0.3s linear, transform 0.3s linear;
-}
 
-.team-item__img:hover {
-  transform: translate(-10px, -10px);
-  box-shadow: 10px 10px #95e1d3;
+  &:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px $secondary-designer-color;
+
+    & .team-item__overlay {
+      visibility: visible;
+    }
+  }
 }
 
 .team-item__overlay {
@@ -20,15 +24,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(252, 227, 138, 0.7),
-    rgba(243, 129, 129, 0.7)
-  );
+  background: $main-linear-gradient;
   visibility: hidden;
   transition: visibility 0.3s linear;
-}
-
-.team-item__img:hover .team-item__overlay {
-  visibility: visible;
 }

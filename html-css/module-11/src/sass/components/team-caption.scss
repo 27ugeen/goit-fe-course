@@ -1,9 +1,9 @@
 .team-caption__name {
   text-transform: uppercase;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 14px;
-  color: #333333;
+  color: $title-color;
   text-align: center;
   margin: 0 0 16px;
 }

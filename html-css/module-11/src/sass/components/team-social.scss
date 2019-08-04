@@ -1,6 +1,5 @@
 .team-social {
-  display: flex;
-  justify-content: center;
+  @include center-flex('hor');
   position: relative;
   left: 50%;
   top: 50%;
@@ -8,27 +7,25 @@
 }
 
 .team-social__link {
+  @include center-flex('all');
   width: 56px;
   height: 56px;
   margin-right: 1px;
-  background: #fce38a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: $main-hover-color;
   transition: background 0.3s linear;
+
+  &:hover {
+    background: $secondary-hover-color;
+
+    & .team-social__svg {
+      fill: $main-white-color;
+    }
+  }
 }
 
 .team-social__svg {
   width: 26px;
   height: 26px;
-  fill: #f38181;
+  fill: $secondary-hover-color;
   transition: fill 0.3s linear;
-}
-
-.team-social__link:hover .team-social__svg {
-  fill: #fff;
-}
-
-.team-social__link:hover {
-  background: #f38181;
 }
